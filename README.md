@@ -1,1 +1,2 @@
-# ros2_qos_converter
+# ROS2 Quality of Service Converter
+By modifying qos_converter/qos_converter.py accordingly to the topic which QoS needs to be changed and to the QoS needed, this ROS2 Package will deploy a node called "/qos_converter" which will listen to the original topic and will publish on a custom topic (which name can be changed) of the same type, the same message it received but using a more fitting QoS profile. Currently, the available profile are the default ones available in the "rclpy.qos" library
